@@ -1,2 +1,2 @@
 # HYPurchase-Unity-IAP
-Cross-platform for Unity iOS, Android, Steam
+Cross-platform IAP for Unity iOS, Android, Steam
