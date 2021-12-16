@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653b68741a7688b4c8a87377310cb58d, type: 3}
+  m_Name: EditorPurchaseSetting
+  m_EditorClassIdentifier: 
+  ConnectSuccess: 1
+  RefreshSuccess: 1
+  PurchaseSuccess: 1
+  ConsumeSuccess: 1
+  RestoreSuccess: 1
+  AutoConsume: 0
+  productList:
+  - productId: test_product_001
+    displayName: test_product_001
+    description: test_001
+    originPrice: 0
+    price: 0.99
+    locale: USD
+  - productId: test_product_002
+    displayName: test_product_002
+    description: test_002
+    originPrice: 0
+    price: 1.99
+    locale: USD
+  - productId: test_product_003
+    displayName: test_product_003
+    description: test_003
+    originPrice: 0
+    price: 4.99
+    locale: USD
