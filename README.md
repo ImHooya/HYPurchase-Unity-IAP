@@ -1,22 +1,20 @@
 # HYPurchase-Unity-IAP
-Cross-platform IAP for Unity iOS, Android, Steam
-
-**DEVELOPING**
+Simple Cross-platform IAP for Unity iOS, Android
 
 # Cross-Platform IAP For Unity
-- Available iOS, Android, Steam
-- First Call HYPurchaseAPI.Init
-- When exit purchase page or scene, call dispose
-- Refresh must need your product item's id
-- You can test logic in editor mode
-- Not Yet support subscribe purchase
+- Available iOS, Android
 
-
-
-
+# Dependencies
 ## iOS
+- StoreKit 2
 ## Android
-- google billing library 4.0.0
-## Steam
+- com.android.billingclient:billing:8.3.0
+- org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3
+## Unity
+- 
 
-**MUST ADD STEAM DYNAMIC PROPERTY - "receipt"**
+# Minimum Version
+## iOS
+- iOS 15.0
+## Android
+- Android 24

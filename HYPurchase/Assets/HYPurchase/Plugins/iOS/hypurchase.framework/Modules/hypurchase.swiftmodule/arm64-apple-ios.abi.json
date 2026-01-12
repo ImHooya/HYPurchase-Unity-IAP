@@ -1,0 +1,4072 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "hypurchase",
+    "printedName": "hypurchase",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "hypurchase"
+      },
+      {
+        "kind": "Function",
+        "name": "HyPurchase_init",
+        "printedName": "HyPurchase_init(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)HyPurchase_init:",
+        "mangledName": "$s10hypurchase15HyPurchase_inityyySPys4Int8VGSgXCF",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "HyPurchase_refreshProducts",
+        "printedName": "HyPurchase_refreshProducts(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)HyPurchase_refreshProducts::",
+        "mangledName": "$s10hypurchase26HyPurchase_refreshProductsyySPys4Int8VG_yAESgXCtF",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "HyPurchase_purchase",
+        "printedName": "HyPurchase_purchase(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)HyPurchase_purchase:::",
+        "mangledName": "$s10hypurchase19HyPurchase_purchaseyySPys4Int8VG_AEyAESgXCtF",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "HyPurchase_getUnconsumedReceipts",
+        "printedName": "HyPurchase_getUnconsumedReceipts(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)HyPurchase_getUnconsumedReceipts:",
+        "mangledName": "$s10hypurchase32HyPurchase_getUnconsumedReceiptsyyySPys4Int8VGSgXCF",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "HyPurchase_consume",
+        "printedName": "HyPurchase_consume(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)HyPurchase_consume::",
+        "mangledName": "$s10hypurchase18HyPurchase_consumeyySPys4Int8VG_yAESgXCtF",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "HyPurchase_consumeAll",
+        "printedName": "HyPurchase_consumeAll(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)HyPurchase_consumeAll:",
+        "mangledName": "$s10hypurchase21HyPurchase_consumeAllyyySPys4Int8VGSgXCF",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "HyPurchase_restore",
+        "printedName": "HyPurchase_restore(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)HyPurchase_restore::",
+        "mangledName": "$s10hypurchase18HyPurchase_restoreyySPys4Int8VG_yAESgXCtF",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "HyPurchase_restoreAll",
+        "printedName": "HyPurchase_restoreAll(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ]
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)HyPurchase_restoreAll:",
+        "mangledName": "$s10hypurchase21HyPurchase_restoreAllyyySPys4Int8VGSgXCF",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyPurchase",
+        "printedName": "HyPurchase",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyPurchase",
+                "printedName": "hypurchase.HyPurchase",
+                "usr": "c:@M@hypurchase@objc(cs)HyPurchase"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase10HyPurchaseC6sharedACvpZ",
+            "mangledName": "$s10hypurchase10HyPurchaseC6sharedACvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyPurchase",
+                    "printedName": "hypurchase.HyPurchase",
+                    "usr": "c:@M@hypurchase@objc(cs)HyPurchase"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase10HyPurchaseC6sharedACvgZ",
+                "mangledName": "$s10hypurchase10HyPurchaseC6sharedACvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "products",
+            "printedName": "products",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[StoreKit.Product]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Product",
+                    "printedName": "StoreKit.Product",
+                    "usr": "s:8StoreKit7ProductV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase10HyPurchaseC8productsSay8StoreKit7ProductVGvp",
+            "mangledName": "$s10hypurchase10HyPurchaseC8productsSay8StoreKit7ProductVGvp",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[StoreKit.Product]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Product",
+                        "printedName": "StoreKit.Product",
+                        "usr": "s:8StoreKit7ProductV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase10HyPurchaseC8productsSay8StoreKit7ProductVGvg",
+                "mangledName": "$s10hypurchase10HyPurchaseC8productsSay8StoreKit7ProductVGvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[StoreKit.Product]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Product",
+                        "printedName": "StoreKit.Product",
+                        "usr": "s:8StoreKit7ProductV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase10HyPurchaseC8productsSay8StoreKit7ProductVGvs",
+                "mangledName": "$s10hypurchase10HyPurchaseC8productsSay8StoreKit7ProductVGvs",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase10HyPurchaseC8productsSay8StoreKit7ProductVGvM",
+                "mangledName": "$s10hypurchase10HyPurchaseC8productsSay8StoreKit7ProductVGvM",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initStoreKit",
+            "printedName": "initStoreKit(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnsafePointer",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int8",
+                            "printedName": "Swift.Int8",
+                            "usr": "s:s4Int8V"
+                          }
+                        ],
+                        "usr": "s:SP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@hypurchase@objc(cs)HyPurchase(im)initStoreKitWithCallback:",
+            "mangledName": "$s10hypurchase10HyPurchaseC12initStoreKit8callbackyySPys4Int8VGSgXC_tF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "objc_name": "initStoreKitWithCallback:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshProducts",
+            "printedName": "refreshProducts(itemIds:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnsafePointer",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int8",
+                            "printedName": "Swift.Int8",
+                            "usr": "s:s4Int8V"
+                          }
+                        ],
+                        "usr": "s:SP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@hypurchase@objc(cs)HyPurchase(im)refreshProductsWithItemIds:callback:completionHandler:",
+            "mangledName": "$s10hypurchase10HyPurchaseC15refreshProducts7itemIds8callbackySo8NSStringC_ySPys4Int8VGSgXCtYaF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "objc_name": "refreshProductsWithItemIds:callback:completionHandler:",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purchase",
+            "printedName": "purchase(itemId:payload:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnsafePointer",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int8",
+                            "printedName": "Swift.Int8",
+                            "usr": "s:s4Int8V"
+                          }
+                        ],
+                        "usr": "s:SP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@hypurchase@objc(cs)HyPurchase(im)purchaseWithItemId:payload:callback:completionHandler:",
+            "mangledName": "$s10hypurchase10HyPurchaseC8purchase6itemId7payload8callbackySo8NSStringC_AIySPys4Int8VGSgXCtYaF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "objc_name": "purchaseWithItemId:payload:callback:completionHandler:",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUnconsumedReceipts",
+            "printedName": "getUnconsumedReceipts(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnsafePointer",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int8",
+                            "printedName": "Swift.Int8",
+                            "usr": "s:s4Int8V"
+                          }
+                        ],
+                        "usr": "s:SP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@hypurchase@objc(cs)HyPurchase(im)getUnconsumedReceiptsWithCallback:completionHandler:",
+            "mangledName": "$s10hypurchase10HyPurchaseC21getUnconsumedReceipts8callbackyySPys4Int8VGSgXC_tYaF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "objc_name": "getUnconsumedReceiptsWithCallback:completionHandler:",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "consume",
+            "printedName": "consume(itemId:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnsafePointer",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int8",
+                            "printedName": "Swift.Int8",
+                            "usr": "s:s4Int8V"
+                          }
+                        ],
+                        "usr": "s:SP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@hypurchase@objc(cs)HyPurchase(im)consumeWithItemId:callback:completionHandler:",
+            "mangledName": "$s10hypurchase10HyPurchaseC7consume6itemId8callbackySo8NSStringC_ySPys4Int8VGSgXCtYaF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "objc_name": "consumeWithItemId:callback:completionHandler:",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "consumeAll",
+            "printedName": "consumeAll(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnsafePointer",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int8",
+                            "printedName": "Swift.Int8",
+                            "usr": "s:s4Int8V"
+                          }
+                        ],
+                        "usr": "s:SP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@hypurchase@objc(cs)HyPurchase(im)consumeAllWithCallback:completionHandler:",
+            "mangledName": "$s10hypurchase10HyPurchaseC10consumeAll8callbackyySPys4Int8VGSgXC_tYaF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "objc_name": "consumeAllWithCallback:completionHandler:",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "restore",
+            "printedName": "restore(itemId:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnsafePointer",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int8",
+                            "printedName": "Swift.Int8",
+                            "usr": "s:s4Int8V"
+                          }
+                        ],
+                        "usr": "s:SP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@hypurchase@objc(cs)HyPurchase(im)restoreWithItemId:callback:completionHandler:",
+            "mangledName": "$s10hypurchase10HyPurchaseC7restore6itemId8callbackySo8NSStringC_ySPys4Int8VGSgXCtYaF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "objc_name": "restoreWithItemId:callback:completionHandler:",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "restoreAll",
+            "printedName": "restoreAll(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnsafePointer",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int8",
+                            "printedName": "Swift.Int8",
+                            "usr": "s:s4Int8V"
+                          }
+                        ],
+                        "usr": "s:SP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@hypurchase@objc(cs)HyPurchase(im)restoreAllWithCallback:completionHandler:",
+            "mangledName": "$s10hypurchase10HyPurchaseC10restoreAll8callbackyySPys4Int8VGSgXC_tYaF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "objc_name": "restoreAllWithCallback:completionHandler:",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyPurchase",
+                "printedName": "hypurchase.HyPurchase",
+                "usr": "c:@M@hypurchase@objc(cs)HyPurchase"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@hypurchase@objc(cs)HyPurchase(im)init",
+            "mangledName": "$s10hypurchase10HyPurchaseCACycfc",
+            "moduleName": "hypurchase",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@hypurchase@objc(cs)HyPurchase",
+        "mangledName": "$s10hypurchase10HyPurchaseC",
+        "moduleName": "hypurchase",
+        "isOpen": true,
+        "objc_name": "HyPurchase",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyStoreKitError",
+        "printedName": "HyStoreKitError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase15HyStoreKitErrorV9errorCodeSivp",
+            "mangledName": "$s10hypurchase15HyStoreKitErrorV9errorCodeSivp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase15HyStoreKitErrorV9errorCodeSivg",
+                "mangledName": "$s10hypurchase15HyStoreKitErrorV9errorCodeSivg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase15HyStoreKitErrorV9errorCodeSivs",
+                "mangledName": "$s10hypurchase15HyStoreKitErrorV9errorCodeSivs",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase15HyStoreKitErrorV9errorCodeSivM",
+                "mangledName": "$s10hypurchase15HyStoreKitErrorV9errorCodeSivM",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase15HyStoreKitErrorV11descriptionSSvp",
+            "mangledName": "$s10hypurchase15HyStoreKitErrorV11descriptionSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase15HyStoreKitErrorV11descriptionSSvg",
+                "mangledName": "$s10hypurchase15HyStoreKitErrorV11descriptionSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase15HyStoreKitErrorV11descriptionSSvs",
+                "mangledName": "$s10hypurchase15HyStoreKitErrorV11descriptionSSvs",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase15HyStoreKitErrorV11descriptionSSvM",
+                "mangledName": "$s10hypurchase15HyStoreKitErrorV11descriptionSSvM",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(errorCode:description:legacyErrorCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10hypurchase15HyStoreKitErrorV9errorCode11description06legacyeG0ACSi_SSSitcfc",
+            "mangledName": "$s10hypurchase15HyStoreKitErrorV9errorCode11description06legacyeG0ACSi_SSSitcfc",
+            "moduleName": "hypurchase",
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10hypurchase15HyStoreKitErrorV",
+        "mangledName": "$s10hypurchase15HyStoreKitErrorV",
+        "moduleName": "hypurchase",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyStoreKitErrorCode",
+        "printedName": "HyStoreKitErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "PurchaseCanceled",
+            "printedName": "PurchaseCanceled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC16PurchaseCanceledAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC16PurchaseCanceledAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC16PurchaseCanceledAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC16PurchaseCanceledAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "PurchasePending",
+            "printedName": "PurchasePending",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC15PurchasePendingAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC15PurchasePendingAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC15PurchasePendingAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC15PurchasePendingAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CommonFailed",
+            "printedName": "CommonFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC12CommonFailedAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC12CommonFailedAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC12CommonFailedAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC12CommonFailedAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "JsonParsingFailed",
+            "printedName": "JsonParsingFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC17JsonParsingFailedAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC17JsonParsingFailedAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC17JsonParsingFailedAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC17JsonParsingFailedAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "RefreshFailed",
+            "printedName": "RefreshFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC13RefreshFailedAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC13RefreshFailedAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC13RefreshFailedAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC13RefreshFailedAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "VerifyFailed",
+            "printedName": "VerifyFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC12VerifyFailedAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC12VerifyFailedAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC12VerifyFailedAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC12VerifyFailedAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "UUIDParsingFailed",
+            "printedName": "UUIDParsingFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC17UUIDParsingFailedAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC17UUIDParsingFailedAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC17UUIDParsingFailedAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC17UUIDParsingFailedAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "StoreFrontNotFound",
+            "printedName": "StoreFrontNotFound",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC0C13FrontNotFoundAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC0C13FrontNotFoundAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC0C13FrontNotFoundAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC0C13FrontNotFoundAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppTransactionVerifyFailed",
+            "printedName": "AppTransactionVerifyFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC26AppTransactionVerifyFailedAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC26AppTransactionVerifyFailedAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC26AppTransactionVerifyFailedAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC26AppTransactionVerifyFailedAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppTransactionVersionMisMatch",
+            "printedName": "AppTransactionVersionMisMatch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC29AppTransactionVersionMisMatchAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC29AppTransactionVersionMisMatchAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC29AppTransactionVersionMisMatchAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC29AppTransactionVersionMisMatchAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppTransactionGetInstanceFailed",
+            "printedName": "AppTransactionGetInstanceFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC31AppTransactionGetInstanceFailedAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC31AppTransactionGetInstanceFailedAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC31AppTransactionGetInstanceFailedAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC31AppTransactionGetInstanceFailedAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ProductRemoved",
+            "printedName": "ProductRemoved",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC14ProductRemovedAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC14ProductRemovedAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC14ProductRemovedAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC14ProductRemovedAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ItemNotFound",
+            "printedName": "ItemNotFound",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitError",
+                "printedName": "hypurchase.HyStoreKitError",
+                "usr": "s:10hypurchase15HyStoreKitErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeC12ItemNotFoundAA0bcdE0VvpZ",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC12ItemNotFoundAA0bcdE0VvpZ",
+            "moduleName": "hypurchase",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyStoreKitError",
+                    "printedName": "hypurchase.HyStoreKitError",
+                    "usr": "s:10hypurchase15HyStoreKitErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC12ItemNotFoundAA0bcdE0VvgZ",
+                "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC12ItemNotFoundAA0bcdE0VvgZ",
+                "moduleName": "hypurchase",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyStoreKitErrorCode",
+                "printedName": "hypurchase.HyStoreKitErrorCode",
+                "usr": "s:10hypurchase19HyStoreKitErrorCodeC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10hypurchase19HyStoreKitErrorCodeCACycfc",
+            "mangledName": "$s10hypurchase19HyStoreKitErrorCodeCACycfc",
+            "moduleName": "hypurchase",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10hypurchase19HyStoreKitErrorCodeC",
+        "mangledName": "$s10hypurchase19HyStoreKitErrorCodeC",
+        "moduleName": "hypurchase",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyCommonResponse",
+        "printedName": "HyCommonResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "responseCode",
+            "printedName": "responseCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase16HyCommonResponseC12responseCodeSivp",
+            "mangledName": "$s10hypurchase16HyCommonResponseC12responseCodeSivp",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC12responseCodeSivg",
+                "mangledName": "$s10hypurchase16HyCommonResponseC12responseCodeSivg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC12responseCodeSivs",
+                "mangledName": "$s10hypurchase16HyCommonResponseC12responseCodeSivs",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC12responseCodeSivM",
+                "mangledName": "$s10hypurchase16HyCommonResponseC12responseCodeSivM",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "responseMessage",
+            "printedName": "responseMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase16HyCommonResponseC15responseMessageSSvp",
+            "mangledName": "$s10hypurchase16HyCommonResponseC15responseMessageSSvp",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC15responseMessageSSvg",
+                "mangledName": "$s10hypurchase16HyCommonResponseC15responseMessageSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC15responseMessageSSvs",
+                "mangledName": "$s10hypurchase16HyCommonResponseC15responseMessageSSvs",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC15responseMessageSSvM",
+                "mangledName": "$s10hypurchase16HyCommonResponseC15responseMessageSSvM",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "responseObject",
+            "printedName": "responseObject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Encodable)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encodable",
+                    "printedName": "any Swift.Encodable",
+                    "usr": "s:SE"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase16HyCommonResponseC14responseObjectSE_pSgvp",
+            "mangledName": "$s10hypurchase16HyCommonResponseC14responseObjectSE_pSgvp",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Encodable)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "any Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC14responseObjectSE_pSgvg",
+                "mangledName": "$s10hypurchase16HyCommonResponseC14responseObjectSE_pSgvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Encodable)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "any Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC14responseObjectSE_pSgvs",
+                "mangledName": "$s10hypurchase16HyCommonResponseC14responseObjectSE_pSgvs",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC14responseObjectSE_pSgvM",
+                "mangledName": "$s10hypurchase16HyCommonResponseC14responseObjectSE_pSgvM",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "responseObjectJson",
+            "printedName": "responseObjectJson",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase16HyCommonResponseC18responseObjectJsonypSgvp",
+            "mangledName": "$s10hypurchase16HyCommonResponseC18responseObjectJsonypSgvp",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC18responseObjectJsonypSgvg",
+                "mangledName": "$s10hypurchase16HyCommonResponseC18responseObjectJsonypSgvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC18responseObjectJsonypSgvs",
+                "mangledName": "$s10hypurchase16HyCommonResponseC18responseObjectJsonypSgvs",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase16HyCommonResponseC18responseObjectJsonypSgvM",
+                "mangledName": "$s10hypurchase16HyCommonResponseC18responseObjectJsonypSgvM",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(responseCode:responseMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyCommonResponse",
+                "printedName": "hypurchase.HyCommonResponse",
+                "usr": "s:10hypurchase16HyCommonResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10hypurchase16HyCommonResponseC12responseCode0E7MessageACSi_SStcfc",
+            "mangledName": "$s10hypurchase16HyCommonResponseC12responseCode0E7MessageACSi_SStcfc",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setResponseObject",
+            "printedName": "setResponseObject(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encodable",
+                "printedName": "any Swift.Encodable",
+                "usr": "s:SE"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10hypurchase16HyCommonResponseC03setD6ObjectyySE_pF",
+            "mangledName": "$s10hypurchase16HyCommonResponseC03setD6ObjectyySE_pF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toJsonString",
+            "printedName": "toJsonString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10hypurchase16HyCommonResponseC12toJsonStringSSyF",
+            "mangledName": "$s10hypurchase16HyCommonResponseC12toJsonStringSSyF",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10hypurchase16HyCommonResponseC",
+        "mangledName": "$s10hypurchase16HyCommonResponseC",
+        "moduleName": "hypurchase",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyAppTransactionResponse",
+        "printedName": "HyAppTransactionResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "jwsRepresentation",
+            "printedName": "jwsRepresentation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase24HyAppTransactionResponseC17jwsRepresentationSSvp",
+            "mangledName": "$s10hypurchase24HyAppTransactionResponseC17jwsRepresentationSSvp",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase24HyAppTransactionResponseC17jwsRepresentationSSvg",
+                "mangledName": "$s10hypurchase24HyAppTransactionResponseC17jwsRepresentationSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase24HyAppTransactionResponseC17jwsRepresentationSSvs",
+                "mangledName": "$s10hypurchase24HyAppTransactionResponseC17jwsRepresentationSSvs",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase24HyAppTransactionResponseC17jwsRepresentationSSvM",
+                "mangledName": "$s10hypurchase24HyAppTransactionResponseC17jwsRepresentationSSvM",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appId",
+            "printedName": "appId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase24HyAppTransactionResponseC5appIdSSvp",
+            "mangledName": "$s10hypurchase24HyAppTransactionResponseC5appIdSSvp",
+            "moduleName": "hypurchase",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase24HyAppTransactionResponseC5appIdSSvg",
+                "mangledName": "$s10hypurchase24HyAppTransactionResponseC5appIdSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase24HyAppTransactionResponseC5appIdSSvs",
+                "mangledName": "$s10hypurchase24HyAppTransactionResponseC5appIdSSvs",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase24HyAppTransactionResponseC5appIdSSvM",
+                "mangledName": "$s10hypurchase24HyAppTransactionResponseC5appIdSSvM",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(jwsRepresentation:appId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyAppTransactionResponse",
+                "printedName": "hypurchase.HyAppTransactionResponse",
+                "usr": "s:10hypurchase24HyAppTransactionResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10hypurchase24HyAppTransactionResponseC17jwsRepresentation5appIdACSS_SStcfc",
+            "mangledName": "$s10hypurchase24HyAppTransactionResponseC17jwsRepresentation5appIdACSS_SStcfc",
+            "moduleName": "hypurchase",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10hypurchase24HyAppTransactionResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10hypurchase24HyAppTransactionResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "hypurchase",
+            "implicit": true,
+            "isOpen": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10hypurchase24HyAppTransactionResponseC",
+        "mangledName": "$s10hypurchase24HyAppTransactionResponseC",
+        "moduleName": "hypurchase",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyProductResponse",
+        "printedName": "HyProductResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyProductResponseV4nameSSvp",
+            "mangledName": "$s10hypurchase17HyProductResponseV4nameSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyProductResponseV4nameSSvg",
+                "mangledName": "$s10hypurchase17HyProductResponseV4nameSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyProductResponseV5priceSSvp",
+            "mangledName": "$s10hypurchase17HyProductResponseV5priceSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyProductResponseV5priceSSvg",
+                "mangledName": "$s10hypurchase17HyProductResponseV5priceSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyProductResponseV11descriptionSSvp",
+            "mangledName": "$s10hypurchase17HyProductResponseV11descriptionSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyProductResponseV11descriptionSSvg",
+                "mangledName": "$s10hypurchase17HyProductResponseV11descriptionSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "productId",
+            "printedName": "productId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyProductResponseV9productIdSSvp",
+            "mangledName": "$s10hypurchase17HyProductResponseV9productIdSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyProductResponseV9productIdSSvg",
+                "mangledName": "$s10hypurchase17HyProductResponseV9productIdSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currencyCode",
+            "printedName": "currencyCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyProductResponseV12currencyCodeSSvp",
+            "mangledName": "$s10hypurchase17HyProductResponseV12currencyCodeSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 4,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyProductResponseV12currencyCodeSSvg",
+                "mangledName": "$s10hypurchase17HyProductResponseV12currencyCodeSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "priceString",
+            "printedName": "priceString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyProductResponseV11priceStringSSvp",
+            "mangledName": "$s10hypurchase17HyProductResponseV11priceStringSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 5,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyProductResponseV11priceStringSSvg",
+                "mangledName": "$s10hypurchase17HyProductResponseV11priceStringSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currencySymbol",
+            "printedName": "currencySymbol",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyProductResponseV14currencySymbolSSvp",
+            "mangledName": "$s10hypurchase17HyProductResponseV14currencySymbolSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 6,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyProductResponseV14currencySymbolSSvg",
+                "mangledName": "$s10hypurchase17HyProductResponseV14currencySymbolSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:price:description:productId:currencyCode:priceString:currencySymbol:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyProductResponse",
+                "printedName": "hypurchase.HyProductResponse",
+                "usr": "s:10hypurchase17HyProductResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10hypurchase17HyProductResponseV4name5price11description9productId12currencyCode0F6String0J6SymbolACSS_S6Stcfc",
+            "mangledName": "$s10hypurchase17HyProductResponseV4name5price11description9productId12currencyCode0F6String0J6SymbolACSS_S6Stcfc",
+            "moduleName": "hypurchase",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10hypurchase17HyProductResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10hypurchase17HyProductResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "hypurchase",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10hypurchase17HyProductResponseV",
+        "mangledName": "$s10hypurchase17HyProductResponseV",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyReceiptResponse",
+        "printedName": "HyReceiptResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "productId",
+            "printedName": "productId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyReceiptResponseV9productIdSSvp",
+            "mangledName": "$s10hypurchase17HyReceiptResponseV9productIdSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyReceiptResponseV9productIdSSvg",
+                "mangledName": "$s10hypurchase17HyReceiptResponseV9productIdSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "orderId",
+            "printedName": "orderId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyReceiptResponseV7orderIdSSvp",
+            "mangledName": "$s10hypurchase17HyReceiptResponseV7orderIdSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyReceiptResponseV7orderIdSSvg",
+                "mangledName": "$s10hypurchase17HyReceiptResponseV7orderIdSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payload",
+            "printedName": "payload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyReceiptResponseV7payloadSSvp",
+            "mangledName": "$s10hypurchase17HyReceiptResponseV7payloadSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyReceiptResponseV7payloadSSvg",
+                "mangledName": "$s10hypurchase17HyReceiptResponseV7payloadSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "purchaseToken",
+            "printedName": "purchaseToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10hypurchase17HyReceiptResponseV13purchaseTokenSSvp",
+            "mangledName": "$s10hypurchase17HyReceiptResponseV13purchaseTokenSSvp",
+            "moduleName": "hypurchase",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10hypurchase17HyReceiptResponseV13purchaseTokenSSvg",
+                "mangledName": "$s10hypurchase17HyReceiptResponseV13purchaseTokenSSvg",
+                "moduleName": "hypurchase",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(productId:orderId:payload:purchaseToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyReceiptResponse",
+                "printedName": "hypurchase.HyReceiptResponse",
+                "usr": "s:10hypurchase17HyReceiptResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10hypurchase17HyReceiptResponseV9productId05orderF07payload13purchaseTokenACSS_S3Stcfc",
+            "mangledName": "$s10hypurchase17HyReceiptResponseV9productId05orderF07payload13purchaseTokenACSS_S3Stcfc",
+            "moduleName": "hypurchase",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10hypurchase17HyReceiptResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10hypurchase17HyReceiptResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "hypurchase",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10hypurchase17HyReceiptResponseV",
+        "mangledName": "$s10hypurchase17HyReceiptResponseV",
+        "moduleName": "hypurchase",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 268,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 445,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 461,
+      "length": 24,
+      "value": "\"purchase user canceled\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 548,
+      "length": 4,
+      "value": "-801"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 18,
+      "value": "\"purchase pending\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 645,
+      "length": 4,
+      "value": "-900"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 664,
+      "length": 15,
+      "value": "\"common failed\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 743,
+      "length": 4,
+      "value": "-901"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 762,
+      "length": 21,
+      "value": "\"json parsing failed\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 843,
+      "length": 4,
+      "value": "-902"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 862,
+      "length": 16,
+      "value": "\"refresh failed\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 937,
+      "length": 4,
+      "value": "-903"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 956,
+      "length": 23,
+      "value": "\"receipt verify failed\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1043,
+      "length": 4,
+      "value": "-904"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 1062,
+      "length": 21,
+      "value": "\"UUID parsing failed\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1148,
+      "length": 4,
+      "value": "-905"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 1167,
+      "length": 22,
+      "value": "\"storefront not found\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1262,
+      "length": 4,
+      "value": "-906"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 1281,
+      "length": 31,
+      "value": "\"app transaction verify failed\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1388,
+      "length": 4,
+      "value": "-907"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 1407,
+      "length": 21,
+      "value": "\"os version mismatch\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1506,
+      "length": 4,
+      "value": "-908"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 1525,
+      "length": 37,
+      "value": "\"app transaction get instance failed\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1623,
+      "length": 4,
+      "value": "-909"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 1642,
+      "length": 17,
+      "value": "\"product removed\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1718,
+      "length": 4,
+      "value": "-999"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseError.swift",
+      "kind": "StringLiteral",
+      "offset": 1737,
+      "length": 16,
+      "value": "\"item not found\""
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 183,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/hooyang\/Desktop\/Projects\/test\/hypurchase\/hypurchase\/models\/HyPurchaseModels.swift",
+      "kind": "StringLiteral",
+      "offset": 219,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}
