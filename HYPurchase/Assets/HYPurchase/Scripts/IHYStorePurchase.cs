@@ -11,8 +11,12 @@ namespace ImHooya.Purchase
         public void Init(Action<HyResponseModel> callback);
         public void RefreshProducts(List<string> productIds, Action<HyResponseModel<List<HyProductModel>>> callback);
         public void GetUnconsumedReceipts(Action<HyResponseModel<List<HyReceiptModel>>> callback);
+        public void GetSubscribeReceipts(Action<HyResponseModel<List<HyReceiptModel>>> callback);
         public void Purchase(string itemId, string payload, Action<HyResponseModel<HyReceiptModel>> callback);
+        public void Subscribe(string itemId, string payload, Action<HyResponseModel<HyReceiptModel>> callback);
         public void Consume(string itemId, Action<HyResponseModel> callback);
+        public void Acknowledge(string itemId, Action<HyResponseModel> callback);
         public void ConsumeAll(Action<HyResponseModel> callback);
+        public void GetStoreCountry(Action<HyResponseModel<HyStoreCountryModel>> callback);
     }
 }

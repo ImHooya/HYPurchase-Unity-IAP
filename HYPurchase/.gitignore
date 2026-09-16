@@ -60,3 +60,15 @@ crashlytics-build.properties
 
 steam_appid.txt
 build.sh
+
+# Local Unity and IDE state
+/UserSettings/
+/.utmp/
+*.slnx
+
+# macOS Finder metadata
+.DS_Store
+
+# Generated Unity build profile assets
+/Assets/Settings/Build Profiles/
+/Assets/Settings/Build Profiles.meta

@@ -5,7 +5,7 @@ apply from: '../shared/keepUnitySymbols.gradle'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.billingclient:billing:8.3.0'
+    implementation 'com.android.billingclient:billing:9.1.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3'
 **DEPS**}
 

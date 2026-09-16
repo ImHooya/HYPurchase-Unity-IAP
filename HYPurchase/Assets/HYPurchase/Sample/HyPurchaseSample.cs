@@ -13,7 +13,10 @@ public class HyPurchaseSample : MonoBehaviour
     private TMP_Text text;
     private List<string> productIds = new List<string>
     {
-
+        "hysample_001",
+        "hysample_002",
+        "hysample_003",
+        "hysub_001"
     };
 
     private List<HyProductModel> productModels = new();
@@ -83,6 +86,24 @@ public class HyPurchaseSample : MonoBehaviour
         });
     }
 
+    public void Subscribe()
+    {
+        string payload = System.Guid.NewGuid().ToString();
+        string productId = productModels.Find(product => product.ProductId == "hysub_001")?.ProductId ?? productIds[3];
+
+        HYPurchase.Subscribe(productId, payload, response =>
+        {
+            Debug.Log($"[Subscribe+Payload] code={response.ResponseCode}, msg={response.ResponseMessage}");
+
+            text.text = JsonConvert.SerializeObject(response, Formatting.Indented);
+
+            if (response.ResponseCode == 0 && response.ResponseObject != null)
+            {
+                Debug.Log($"Subscribed productId={response.ResponseObject.ProductId}");
+            }
+        });
+    }
+
     public void GetUnconsumedReceipts()
     {
         HYPurchase.GetUnconsumedReceipts(response =>
@@ -95,6 +116,24 @@ public class HyPurchaseSample : MonoBehaviour
                 foreach (var receipt in response.ResponseObject)
                 {
                     Debug.Log($"Receipt productId={receipt.ProductId}, orderId={receipt.OrderId}");
+                }
+            }
+        });
+    }
+
+    public void GetSubscribeReceipts()
+    {
+        HYPurchase.GetSubscribeReceipts(response =>
+        {
+            Debug.Log($"[GetSubscribeReceipts] code={response.ResponseCode}, msg={response.ResponseMessage}");
+
+            text.text = JsonConvert.SerializeObject(response, Formatting.Indented);
+
+            if (response.ResponseCode == 0 && response.ResponseObject != null)
+            {
+                foreach (var receipt in response.ResponseObject)
+                {
+                    Debug.Log($"Subscribe receipt productId={receipt.ProductId}, orderId={receipt.OrderId}");
                 }
             }
         });
@@ -113,6 +152,21 @@ public class HyPurchaseSample : MonoBehaviour
         HYPurchase.ConsumeAll(response =>
         {
             Debug.Log($"[ConsumeAll] code={response.ResponseCode}, msg={response.ResponseMessage}");
+        });
+    }
+
+    public void GetStoreCountryCode()
+    {
+        HYPurchase.GetStoreCountry(response =>
+        {
+            Debug.Log($"[GetStoreCountry] code={response.ResponseCode}, msg={response.ResponseMessage}");
+
+            text.text = JsonConvert.SerializeObject(response, Formatting.Indented);
+
+            if (response.ResponseCode == 0 && response.ResponseObject != null)
+            {
+                Debug.Log($"Store countryCode={response.ResponseObject.CountryCode}");
+            }
         });
     }
 }

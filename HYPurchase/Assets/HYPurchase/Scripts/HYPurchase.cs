@@ -111,6 +111,61 @@ namespace ImHooya.Purchase
             storePurchase.GetUnconsumedReceipts(callback);
         }
 
+        public static void GetSubscribeReceipts(Action<HyResponseModel<List<HyReceiptModel>>> callback)
+        {
+            if (storePurchase == null)
+            {
+                var response = new HyResponseModel<List<HyReceiptModel>>();
+                response.ResponseCode = -901;
+                response.ResponseMessage = "not initialized";
+                callback(response);
+                return;
+            }
+
+            storePurchase.GetSubscribeReceipts(callback);
+        }
+
+        public static void Subscribe(string productId, Action<HyResponseModel<HyReceiptModel>> callback)
+        {
+            if (storePurchase == null)
+            {
+                var response = new HyResponseModel<HyReceiptModel>();
+                response.ResponseCode = -901;
+                response.ResponseMessage = "not initialized";
+                callback(response);
+                return;
+            }
+
+            storePurchase.Subscribe(productId, string.Empty, callback);
+        }
+
+        public static void Subscribe(string productId, string payload, Action<HyResponseModel<HyReceiptModel>> callback)
+        {
+            if (storePurchase == null)
+            {
+                var response = new HyResponseModel<HyReceiptModel>();
+                response.ResponseCode = -901;
+                response.ResponseMessage = "not initialized";
+                callback(response);
+                return;
+            }
+
+            if (!string.IsNullOrEmpty(payload))
+            {
+                if (!Guid.TryParse(payload, out _))
+                {
+                    callback(new HyResponseModel<HyReceiptModel>
+                    {
+                        ResponseCode = -902,
+                        ResponseMessage = "invalid payload uuid format"
+                    });
+                    return;
+                }
+            }
+
+            storePurchase.Subscribe(productId, payload, callback);
+        }
+
         public static void Consume(string productId, Action<HyResponseModel> callback)
         {
             if (storePurchase == null)
@@ -125,6 +180,20 @@ namespace ImHooya.Purchase
             storePurchase.Consume(productId, callback);
         }
 
+        public static void Acknowledge(string productId, Action<HyResponseModel> callback)
+        {
+            if (storePurchase == null)
+            {
+                var response = new HyResponseModel();
+                response.ResponseCode = -901;
+                response.ResponseMessage = "not initialized";
+                callback(response);
+                return;
+            }
+
+            storePurchase.Acknowledge(productId, callback);
+        }
+
         public static void ConsumeAll(Action<HyResponseModel> callback)
         {
             if (storePurchase == null)
@@ -137,6 +206,20 @@ namespace ImHooya.Purchase
             }
 
             storePurchase.ConsumeAll(callback);
+        }
+
+        public static void GetStoreCountry(Action<HyResponseModel<HyStoreCountryModel>> callback)
+        {
+            if (storePurchase == null)
+            {
+                var response = new HyResponseModel<HyStoreCountryModel>();
+                response.ResponseCode = -901;
+                response.ResponseMessage = "not initialized";
+                callback(response);
+                return;
+            }
+
+            storePurchase.GetStoreCountry(callback);
         }
     }
 }

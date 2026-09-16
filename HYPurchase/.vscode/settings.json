@@ -52,5 +52,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "HYPurchase.sln"
+    "dotnet.defaultSolution": "HYPurchase.slnx"
 }

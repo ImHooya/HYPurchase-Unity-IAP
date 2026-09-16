@@ -1,13 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name hypurchase
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-upcoming-feature MemberImportVisibility -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name hypurchase
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import Foundation
 import StoreKit
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public class HyCommonResponse {
+  public init(responseCode: Swift.Int, responseMessage: Swift.String)
+  public func setResponseObject(_ responseObject: any Swift.Encodable)
+  public func toJsonString() -> Swift.String
+  @objc deinit
+}
 public typealias HyPurchaseCallback = @convention(c) (Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
 @_cdecl("HyPurchase_init")
 public func HyPurchase_init(_ callback: hypurchase.HyPurchaseCallback)
@@ -15,8 +21,12 @@ public func HyPurchase_init(_ callback: hypurchase.HyPurchaseCallback)
 public func HyPurchase_refreshProducts(_ itemIds: Swift.UnsafePointer<Swift.CChar>, _ callback: hypurchase.HyPurchaseCallback)
 @_cdecl("HyPurchase_purchase")
 public func HyPurchase_purchase(_ itemId: Swift.UnsafePointer<Swift.CChar>, _ payload: Swift.UnsafePointer<Swift.CChar>, _ callback: hypurchase.HyPurchaseCallback)
+@_cdecl("HyPurchase_subscribe")
+public func HyPurchase_subscribe(_ itemId: Swift.UnsafePointer<Swift.CChar>, _ payload: Swift.UnsafePointer<Swift.CChar>, _ callback: hypurchase.HyPurchaseCallback)
 @_cdecl("HyPurchase_getUnconsumedReceipts")
 public func HyPurchase_getUnconsumedReceipts(_ callback: hypurchase.HyPurchaseCallback)
+@_cdecl("HyPurchase_getSubscribeReceipts")
+public func HyPurchase_getSubscribeReceipts(_ callback: hypurchase.HyPurchaseCallback)
 @_cdecl("HyPurchase_consume")
 public func HyPurchase_consume(_ itemId: Swift.UnsafePointer<Swift.CChar>, _ callback: hypurchase.HyPurchaseCallback)
 @_cdecl("HyPurchase_consumeAll")
@@ -25,38 +35,21 @@ public func HyPurchase_consumeAll(_ callback: hypurchase.HyPurchaseCallback)
 public func HyPurchase_restore(_ itemId: Swift.UnsafePointer<Swift.CChar>, _ callback: hypurchase.HyPurchaseCallback)
 @_cdecl("HyPurchase_restoreAll")
 public func HyPurchase_restoreAll(_ callback: hypurchase.HyPurchaseCallback)
+@_cdecl("HyPurchase_getStoreCountry")
+public func HyPurchase_getStoreCountry(_ callback: hypurchase.HyPurchaseCallback)
 @_inheritsConvenienceInitializers @objc(HyPurchase) public class HyPurchase : ObjectiveC.NSObject {
   public static let shared: hypurchase.HyPurchase
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func initStoreKit(callback: @convention(c) (Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  @objc nonisolated(nonsending) public func refreshProducts(itemIds: Foundation.NSString, callback: hypurchase.HyPurchaseCallback) async
-  #endif
-  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  @objc nonisolated(nonsending) public func purchase(itemId: Foundation.NSString, payload: Foundation.NSString, callback: hypurchase.HyPurchaseCallback) async
-  #endif
-  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  @objc nonisolated(nonsending) public func getUnconsumedReceipts(callback: hypurchase.HyPurchaseCallback) async
-  #endif
-  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  @objc nonisolated(nonsending) public func consume(itemId: Foundation.NSString, callback: hypurchase.HyPurchaseCallback) async
-  #endif
-  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  @objc nonisolated(nonsending) public func consumeAll(callback: hypurchase.HyPurchaseCallback) async
-  #endif
-  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  @objc nonisolated(nonsending) public func restore(itemId: Foundation.NSString, callback: hypurchase.HyPurchaseCallback) async
-  #endif
-  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  @objc nonisolated(nonsending) public func restoreAll(callback: hypurchase.HyPurchaseCallback) async
-  #endif
+  @objc public func refreshProducts(itemIds: Foundation.NSString, callback: hypurchase.HyPurchaseCallback) async
+  @objc public func purchase(itemId: Foundation.NSString, payload: Foundation.NSString, callback: hypurchase.HyPurchaseCallback) async
+  @objc public func subscribe(productId: Foundation.NSString, payload: Foundation.NSString, callback: hypurchase.HyPurchaseCallback) async
+  @objc public func getSubscribeReceipts(callback: hypurchase.HyPurchaseCallback) async
+  @objc public func getUnconsumedReceipts(callback: hypurchase.HyPurchaseCallback) async
+  @objc public func consume(itemId: Foundation.NSString, callback: hypurchase.HyPurchaseCallback) async
+  @objc public func consumeAll(callback: hypurchase.HyPurchaseCallback) async
+  @objc public func restore(itemId: Foundation.NSString, callback: hypurchase.HyPurchaseCallback) async
+  @objc public func restoreAll(callback: hypurchase.HyPurchaseCallback) async
+  @objc public func getStoreCountry(callback: hypurchase.HyPurchaseCallback) async
   @objc override dynamic public init()
-  @objc deinit
-}
-public class HyCommonResponse {
-  public init(responseCode: Swift.Int, responseMessage: Swift.String)
-  public func setResponseObject(_ responseObject: any Swift.Encodable)
-  public func toJsonString() -> Swift.String
   @objc deinit
 }

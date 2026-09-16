@@ -6,71 +6,82 @@ namespace ImHooya.Purchase.Models
     public class HyResponseModel
     {
         [DataMember(Name = "responseCode")]
-        public int ResponseCode { get; set; }
+        public int ResponseCode { get; internal set; }
 
         [DataMember(Name = "responseMessage")]
-        public string ResponseMessage { get; set; } = string.Empty;
+        public string ResponseMessage { get; internal set; } = string.Empty;
     }
 
     [DataContract]
     public class HyResponseModel<T> : HyResponseModel
     {
         [DataMember(Name = "responseObject")]
-        public T ResponseObject { get; set; }
+        public T ResponseObject { get; internal set; }
     }
 
     [DataContract]
     public class HyReceiptModel
     {
         [DataMember(Name = "orderId", EmitDefaultValue = false)]
-        public string OrderId { get; set; }
+        public string OrderId { get; internal set; }
 
         [DataMember(Name = "purchaseToken", EmitDefaultValue = false)]
-        public string PurchaseToken { get; set; }
+        public string PurchaseToken { get; internal set; }
 
         [DataMember(Name = "packageName", EmitDefaultValue = false)]
-        public string PackageName { get; set; }
+        public string PackageName { get; internal set; }
 
         [DataMember(Name = "productId", EmitDefaultValue = false)]
-        public string ProductId { get; set; }
+        public string ProductId { get; internal set; }
 
         [DataMember(Name = "purchaseTime", EmitDefaultValue = false)]
-        public string PurchaseTime { get; set; }
+        public string PurchaseTime { get; internal set; }
 
         [DataMember(Name = "paymentId", EmitDefaultValue = false)]
-        public string PaymentId { get; set; }
+        public string PaymentId { get; internal set; }
 
         [DataMember(Name = "purchaseId", EmitDefaultValue = false)]
-        public string PurchaseId { get; set; }
+        public string PurchaseId { get; internal set; }
 
         [DataMember(Name = "payload", EmitDefaultValue = false)]
-        public string Payload { get; set; }
+        public string Payload { get; internal set; }
+
+        [DataMember(Name = "productType")]
+        public string ProductType { get; internal set; }
     }
 
+    [DataContract]
     public class HyProductModel
     {
-        [DataMember(Name = "name")]
-        public string Name { get; set; }
-
         [DataMember(Name = "title")]
-        public string Title { get; set; }
+        public string Title { get; internal set; }
 
         [DataMember(Name = "priceString")]
-        public string PriceString { get; set; }
+        public string PriceString { get; internal set; }
 
         [DataMember(Name = "price")]
-        public string Price { get; set; }
+        public string Price { get; internal set; }
 
         [DataMember(Name = "currencyCode")]
-        public string CurrencyCode { get; set; }
+        public string CurrencyCode { get; internal set; }
 
         [DataMember(Name = "description")]
-        public string Description { get; set; }
+        public string Description { get; internal set; }
 
         [DataMember(Name = "productId")]
-        public string ProductId { get; set; }
+        public string ProductId { get; internal set; }
 
         [DataMember(Name = "currencySymbol")]
-        public string CurrencySymbol { get; set; }
+        public string CurrencySymbol { get; internal set; }
+
+        [DataMember(Name = "productType")]
+        public string ProductType { get; internal set; }
+    }
+
+    [DataContract]
+    public class HyStoreCountryModel
+    {
+        [DataMember(Name = "countryCode")]
+        public string CountryCode { get; internal set; }
     }
 }

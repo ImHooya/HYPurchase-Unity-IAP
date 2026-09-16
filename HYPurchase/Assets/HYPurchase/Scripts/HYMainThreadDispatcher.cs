@@ -24,7 +24,6 @@ namespace ImHooya
         {
             if (action == null) return;
 
-            // instance는 이미 메인 스레드에서 생성되어 있음
             lock (queue)
             {
                 queue.Enqueue(action);

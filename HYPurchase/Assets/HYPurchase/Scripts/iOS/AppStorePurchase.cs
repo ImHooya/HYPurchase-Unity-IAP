@@ -29,11 +29,20 @@ namespace ImHooya.Purchase
         [DllImport("__Internal")]
         private static extern void HyPurchase_getUnconsumedReceipts(IOSPurchaseHandler.GetUnconsumedComplete callback);
 
+        [DllImport("__Internal")]
+        private static extern void HyPurchase_getSubscribeReceipts(IOSPurchaseHandler.GetUnconsumedComplete callback);
+
+        [DllImport("__Internal")]
+        private static extern void HyPurchase_subscribe(string productId, string payload, IOSPurchaseHandler.PurchaseComplete callback);
+
+        [DllImport("__Internal")]
+        private static extern void HyPurchase_getStoreCountry(IOSPurchaseHandler.GetStoreCountryCodeComplete callback);
+
         public void Consume(string itemId, Action<HyResponseModel> callback)
         {
             IOSPurchaseHandler.OnConsumeComplete = json =>
             {
-                var res = JsonConvert.DeserializeObject<HyResponseModel>(json);
+                var res = DeserializeResponse<HyResponseModel>(json);
 
                 if (res == null)
                 {
@@ -57,7 +66,7 @@ namespace ImHooya.Purchase
         {
             IOSPurchaseHandler.OnConsumeComplete = json =>
             {
-                var res = JsonConvert.DeserializeObject<HyResponseModel>(json);
+                var res = DeserializeResponse<HyResponseModel>(json);
 
                 if (res == null)
                 {
@@ -77,6 +86,11 @@ namespace ImHooya.Purchase
             HyPurchase_consumeAll(IOSPurchaseHandler.OnConsumeCompleteReceived);
         }
 
+        public void Acknowledge(string itemId, Action<HyResponseModel> callback)
+        {
+            Consume(itemId, callback);
+        }
+
         public PurchaseStore GetStoreType()
         {
             return PurchaseStore.AppStore;
@@ -86,7 +100,7 @@ namespace ImHooya.Purchase
         {
             IOSPurchaseHandler.OnGetUnconsumedComplete = json =>
             {
-                var res = JsonConvert.DeserializeObject<HyResponseModel<List<HyReceiptModel>>>(json);
+                var res = DeserializeResponse<HyResponseModel<List<HyReceiptModel>>>(json);
 
                 if (res == null)
                 {
@@ -106,11 +120,35 @@ namespace ImHooya.Purchase
             HyPurchase_getUnconsumedReceipts(IOSPurchaseHandler.OnGetUnconsumedCompleteReceived);
         }
 
+        public void GetSubscribeReceipts(Action<HyResponseModel<List<HyReceiptModel>>> callback)
+        {
+            IOSPurchaseHandler.OnGetUnconsumedComplete = json =>
+            {
+                var res = DeserializeResponse<HyResponseModel<List<HyReceiptModel>>>(json);
+
+                if (res == null)
+                {
+                    res = new HyResponseModel<List<HyReceiptModel>>()
+                    {
+                        ResponseCode = -902,
+                        ResponseMessage = "json parsing error"
+                    };
+                }
+
+                HYMainThreadDispatcher.RunOnUnityThread(() =>
+                {
+                    callback?.Invoke(res);
+                });
+            };
+
+            HyPurchase_getSubscribeReceipts(IOSPurchaseHandler.OnGetUnconsumedCompleteReceived);
+        }
+
         public void Init(Action<HyResponseModel> callback)
         {
             IOSPurchaseHandler.OnInitComplete = json =>
             {
-                var res = JsonConvert.DeserializeObject<HyResponseModel>(json);
+                var res = DeserializeResponse<HyResponseModel>(json);
 
                 if (res == null)
                 {
@@ -134,7 +172,7 @@ namespace ImHooya.Purchase
         {
             IOSPurchaseHandler.OnPurchaseComplete = json =>
             {
-                var res = JsonConvert.DeserializeObject<HyResponseModel<HyReceiptModel>>(json);
+                var res = DeserializeResponse<HyResponseModel<HyReceiptModel>>(json);
 
                 if (res == null)
                 {
@@ -154,6 +192,30 @@ namespace ImHooya.Purchase
             HyPurchase_purchase(productId, payload, IOSPurchaseHandler.OnPurchaseCompleteReceived);
         }
 
+        public void Subscribe(string productId, string payload, Action<HyResponseModel<HyReceiptModel>> callback)
+        {
+            IOSPurchaseHandler.OnPurchaseComplete = json =>
+            {
+                var res = DeserializeResponse<HyResponseModel<HyReceiptModel>>(json);
+
+                if (res == null)
+                {
+                    res = new HyResponseModel<HyReceiptModel>()
+                    {
+                        ResponseCode = -902,
+                        ResponseMessage = "json parsing error"
+                    };
+                }
+
+                HYMainThreadDispatcher.RunOnUnityThread(() =>
+                {
+                    callback?.Invoke(res);
+                });
+            };
+
+            HyPurchase_subscribe(productId, payload, IOSPurchaseHandler.OnPurchaseCompleteReceived);
+        }
+
         public void RefreshProducts(List<string> productIds, Action<HyResponseModel<List<HyProductModel>>> callback)
         {
             var payloadObj = new { list = productIds ?? new List<string>() };
@@ -161,7 +223,7 @@ namespace ImHooya.Purchase
 
             IOSPurchaseHandler.OnRefreshProductsComplete = json =>
             {
-                var res = JsonConvert.DeserializeObject<HyResponseModel<List<HyProductModel>>>(json);
+                var res = DeserializeResponse<HyResponseModel<List<HyProductModel>>>(json);
 
                 if (res == null)
                 {
@@ -179,6 +241,42 @@ namespace ImHooya.Purchase
             };
 
             HyPurchase_refreshProducts(itemIdsJson, IOSPurchaseHandler.OnRefreshProductsCompleteReceived);
+        }
+
+        public void GetStoreCountry(Action<HyResponseModel<HyStoreCountryModel>> callback)
+        {
+            IOSPurchaseHandler.OnGetStoreCountryCodeComplete = json =>
+            {
+                var res = DeserializeResponse<HyResponseModel<HyStoreCountryModel>>(json);
+
+                if (res == null)
+                {
+                    res = new HyResponseModel<HyStoreCountryModel>()
+                    {
+                        ResponseCode = -902,
+                        ResponseMessage = "json parsing error"
+                    };
+                }
+
+                HYMainThreadDispatcher.RunOnUnityThread(() =>
+                {
+                    callback?.Invoke(res);
+                });
+            };
+
+            HyPurchase_getStoreCountry(IOSPurchaseHandler.OnGetStoreCountryCodeCompleteReceived);
+        }
+
+        private static T DeserializeResponse<T>(string json) where T : HyResponseModel
+        {
+            try
+            {
+                return JsonConvert.DeserializeObject<T>(json);
+            }
+            catch (JsonException)
+            {
+                return null;
+            }
         }
     }
 }
